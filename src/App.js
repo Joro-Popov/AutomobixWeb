@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import Navigation from './containers/navigation';
+import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
+
+import Navigation from './containers/navigation';
 import Home from './containers/home';
 import About from './containers/about';
 import Contact from './containers/contact';
