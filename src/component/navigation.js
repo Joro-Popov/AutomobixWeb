@@ -11,7 +11,7 @@ export default class Navigation extends Component {
                         <a href="mailto:info@yourmail.com"><i class="fa fa-envelope"aria-hidden="true"></i>info@yourmail.com</a>
                     </div>
                     <nav class="d-flex aic">
-                        <a href="#" class="login"><i class="fa fa-user" aria-hidden="true"></i>Login</a>
+                        <a href="/login" class="login"><i class="fa fa-user" aria-hidden="true"></i>Login</a>
                         <ul class="nav social d-none d-md-flex">
                             <li><a href="https://www.facebook.com/fh5co" target="_blank"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
@@ -33,9 +33,9 @@ export default class Navigation extends Component {
                     <a class="search-icon d-none d-md-block" href="#"><i class="fa fa-search"></i></a>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                         <ul class="navbar-nav">
-                            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/services">Services</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
