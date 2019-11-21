@@ -167,7 +167,6 @@ form button.btn-primary:hover {
   background: url("../images/hero-bg.jpg") no-repeat center;
   background-size: cover;
   overflow: hidden;
-  position: relative;
   z-index: 0;
 }
 
