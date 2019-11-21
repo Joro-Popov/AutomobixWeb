@@ -80,28 +80,28 @@ export default class Footer extends Component {
                                 <div class="single-widget recent-post-widget" data-aos="fade-up" data-aos-delay="400">
                                     <h6 class="widget-tiltle">Latest Updates</h6>
                                     <div class="media">
-                                        <a class="rcnt-img" href="#"><img src="assets/images/rcnt-post1.png" alt="Recent Post" /></a>
+                                        <a class="rcnt-img" href="#"><img src="/images/rcnt-post1.png" alt="Recent Post" /></a>
                                         <div class="media-body ml-3">
                                             <h6><a href="#">An engaging</a></h6>
                                             <p><i class="fa fa-user"></i>Mano <i class="fa fa-eye"></i> 202 Views</p>
                                         </div>
                                     </div>
                                     <div class="media">
-                                        <a class="rcnt-img" href="#"><img src="assets/images/rcnt-post2.png"alt="Recent Post" /></a>
+                                        <a class="rcnt-img" href="#"><img src="/images/rcnt-post2.png"alt="Recent Post" /></a>
                                         <div class="media-body ml-3">
                                             <h6><a href="#">Statistics and analysis. The key to succes.</a></h6>
                                             <p><i class="fa fa-user"></i>Rosias <i class="fa fa-eye"></i> 20 Views</p>
                                         </div>
                                     </div>
                                     <div class="media">
-                                        <a class="rcnt-img" href="#"><img src="assets/images/rcnt-post3.png" alt="Recent Post" /></a>
+                                        <a class="rcnt-img" href="#"><img src="/images/rcnt-post3.png" alt="Recent Post" /></a>
                                         <div class="media-body ml-3">
                                             <h6><a href="#">Envato Meeting turns into a photoshooting.</a></h6>
                                             <p><i class="fa fa-user"></i>Kien <i class="fa fa-eye"></i> 74 Views</p>
                                         </div>
                                     </div>
                                     <div class="media">
-                                        <a class="rcnt-img" href="#"><img src="assets/images/rcnt-post4.png" alt="Recent Post" /></a>
+                                        <a class="rcnt-img" href="#"><img src="/images/rcnt-post4.png" alt="Recent Post" /></a>
                                         <div class="media-body ml-3">
                                             <h6><a href="#">An engaging embedded the video posts</a></h6>
                                             <p><i class="fa fa-user"></i>Robert <i class="fa fa-eye"></i> 48 Views</p>
