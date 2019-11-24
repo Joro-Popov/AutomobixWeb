@@ -43,7 +43,7 @@ body, html {
 
 /*---------------------------------------------*/
 a {
-	font-family: Poppins-Regular;
+	font-family: inherit;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -265,7 +265,7 @@ iframe {
 }
 
 .label-input100 {
-  font-family: Poppins-Regular;
+  font-family: inherit;
   font-size: 15px;
   color: #808080;
   line-height: 1.2;
@@ -280,7 +280,7 @@ iframe {
 
 /*---------------------------------------------*/
 .input100 {
-  font-family: Poppins-Regular;
+  font-family: inherit;
   font-size: 15px;
   color: #555555;
   line-height: 1.2;
@@ -315,7 +315,7 @@ iframe {
   -moz-transition: all 0.6s;
   transition: all 0.6s;
 
-  background: #57b846;
+  background: #ee1515;
 }
 
 
@@ -411,8 +411,7 @@ input.input100 {
   height: 50px;
   background-color: #ee1515;
   border-radius: 25px;
-
-  font-family: Poppins-Regular;
+  font-family: inherit;
   font-size: 16px;
   color: #fff;
   line-height: 1.2;

@@ -11,7 +11,7 @@ export default class Navigation extends Component {
                         <a href="mailto:info@yourmail.com"><i class="fa fa-envelope"aria-hidden="true"></i>info@yourmail.com</a>
                     </div>
                     <nav class="d-flex aic">
-                        <a href="/login" class="login"><i class="fa fa-user" aria-hidden="true"></i>Login</a>
+                        <a href="/authentication" class="login"><i class="fa fa-user" aria-hidden="true"></i>Login/Register</a>
                         <ul class="nav social d-none d-md-flex">
                             <li><a href="https://www.facebook.com/fh5co" target="_blank"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
