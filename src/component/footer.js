@@ -143,14 +143,6 @@ export default class Footer extends Component {
                         </div>
                     </div>
                 </div>
-                <div class="foot-note">
-                    <div class="container">
-                        <div class="footer-content text-center text-lg-left d-lg-flex justify-content-between align-items-center">
-                            <p class="mb-0" data-aos="fade-left" data-aos-offset="0"><a href="#">Terms Of Use</a><a
-                            href="#">Privacy & Security Statement</a></p>
-                        </div>
-                    </div>
-                </div>
             </footer>
         )
     }

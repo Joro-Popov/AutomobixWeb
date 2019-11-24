@@ -7,6 +7,7 @@ import Footer from './component/footer';
 import Home from './containers/home';
 import About from './containers/about';
 import Contact from './containers/contact';
+import Authentication from './containers/authentication';
 
 export default class App extends Component {
   render() {
@@ -17,6 +18,7 @@ export default class App extends Component {
           <Route exact path='/' component={Home} />
           <Route path='/about' component={About} />
           <Route path='/contact' component={Contact} />
+          <Route path='/login' component={Authentication} />
           <Footer />
         </div>
       </Router>
