@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
+import ContactForm from '../component/contact/contactForm';
 
 export default class Contact extends Component {
     render() {
         return(
-            <h2>Contact page</h2>
+        <div>
+            <div class="limiter">
+                <ContactForm />
+            </div>
+        </div>
         )
     }
 }
