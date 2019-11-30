@@ -12,20 +12,10 @@ export default class ContactForm extends Component {
         }
     }
 
-    setFullName = async event => {
-        await this.setState({ fullName: event.target.value});
-    };
+    handleStateChange = async event => {
+        const { name, value } = event.target;
 
-    setEmailAddress = async event => {
-        await this.setState({ emailAddress: event.target.value});
-    };
-
-    setPhoneNumber = async event => {
-        await this.setState({ phoneNumber: event.target.value});
-    };
-
-    setMessage = async event => {
-        await this.setState({ message: event.target.value});
+        await this.setState({ [name]: value});
     };
 
     submitForm = event => {
@@ -50,7 +40,7 @@ export default class ContactForm extends Component {
                     name="fullName" 
                     placeholder="Enter your full name" 
                     value={fullName}
-                    onChange={this.setFullName}
+                    onChange={this.handleStateChange}
                     />
                     <span class="focus-input100"></span>
                 </div>
@@ -59,10 +49,10 @@ export default class ContactForm extends Component {
                     <input 
                     class="input100" 
                     type="email" 
-                    name="email" 
+                    name="emailAddress" 
                     placeholder="Enter email address" 
                     value={emailAddress}
-                    onChange={this.setEmailAddress}
+                    onChange={this.handleStateChange}
                     />
                     <span class="focus-input100"></span>
                 </div>
@@ -74,7 +64,7 @@ export default class ContactForm extends Component {
                     name="phoneNumber" 
                     placeholder="Enter phone number" 
                     value={phoneNumber}
-                    onChange={this.setPhoneNumber}
+                    onChange={this.handleStateChange}
                     />
                     <span class="focus-input100"></span>
                 </div>
@@ -86,7 +76,7 @@ export default class ContactForm extends Component {
                     type="text" 
                     name="message" 
                     placeholder="Enter your message or question"
-                    onChange={this.setMessage}
+                    onChange={this.handleStateChange}
                     >
                         {message}
                     </textarea>

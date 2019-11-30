@@ -10,12 +10,9 @@ constructor(props) {
     }
 }
 
-setUsername = async event => {
-    await this.setState({ username: event.target.value });
-};
-
-setPassword = async event => {
-    await this.setState({ password: event.target.value });
+handleStateChange = async event => {
+    const { name, value } = event.target;
+    await this.setState({ [name]: value });
 };
 
 login = event => {
@@ -40,7 +37,7 @@ render() {
                 name="username" 
                 placeholder="Enter username" 
                 value={username}
-                onChange={this.setUsername} 
+                onChange={this.handleStateChange} 
                 />
                 <span class="focus-input100"></span>
             </div>
@@ -49,10 +46,10 @@ render() {
                 <input 
                 class="input100" 
                 type="password" 
-                name="pass" 
+                name="password" 
                 placeholder="Enter password" 
                 value={password}
-                onChange={this.setPassword} 
+                onChange={this.handleStateChange} 
                 />
                 <span class="focus-input100"></span>
             </div>
