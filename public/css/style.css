@@ -350,6 +350,12 @@ form button.btn-primary:hover {
   margin-bottom: 10px;
 }
 
+.moreInfo {
+  width: 40%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
 /*-----------------------------------
     1 - Featured
 ------------------------------------*/
