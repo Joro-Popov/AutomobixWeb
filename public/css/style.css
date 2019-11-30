@@ -352,9 +352,36 @@ form button.btn-primary:hover {
 
 .moreInfo {
   width: 40%;
-  display: flex;
+  display: block;
   align-items: end;
   justify-content: center;
+}
+
+.contact-header {
+  font-family: inherit;
+  font-size: 30px;
+  color: gray;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.header-with-icon {
+  display: flex;
+  align-items: baseline;
+}
+.contact-header-item {
+  font-family: inherit;
+  font-size: 20px;
+  color: #ee1515;
+  text-transform: uppercase;
+  line-height: 1.2;
+  padding-bottom: 3%;
+  padding-left: 2%;
+}
+.contact-container {
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 /*-----------------------------------
     1 - Featured
