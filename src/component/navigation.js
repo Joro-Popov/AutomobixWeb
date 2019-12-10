@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
+import ApiConfig from '../../src/services/ApiConfig';
 
 export default class Navigation extends Component {
+
+    logout = () => {
+        ApiConfig.logoutUser();
+        sessionStorage.clear();
+        this.props.history.push('/');
+    };
+
     render() {
         return(
             <header class="position-absolute w-100">
@@ -12,6 +20,7 @@ export default class Navigation extends Component {
                     </div>
                     <nav class="d-flex aic">
                         <a href="/authentication" class="login"><i class="fa fa-user" aria-hidden="true"></i>Login/Register</a>
+                        <a href="/authentication" class="login"><i class="fa fa-user" aria-hidden="true"></i>Logoutr</a>
                         <ul class="nav social d-none d-md-flex">
                             <li><a href="https://www.facebook.com/fh5co" target="_blank"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-google-plus"></i></a></li>

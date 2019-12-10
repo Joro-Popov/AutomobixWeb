@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ApiConfig from '../../services/ApiConfig';
 
 export default class Register extends Component {
 constructor(props) {
@@ -13,12 +14,13 @@ constructor(props) {
 
 handleStateChange = async event => {
     const { name, value } = event.target;
-    await this.setState({ [name]: value })
+    await this.setState({ [name]: value });
 };
 
-register = event => {
+register = async event => {
     event.preventDefault();
-    console.log(this.state);
+    const { username, password } = this.state;
+    await ApiConfig.registerUser(username, password);
 };
 
 render() {

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ApiConfig from '../../services/ApiConfig';
 
 export default class Login extends Component {
 constructor(props) {
@@ -15,9 +16,11 @@ handleStateChange = async event => {
     await this.setState({ [name]: value });
 };
 
-login = event => {
+login = async event => {
     event.preventDefault();
-    console.log(this.state);
+    const { username, password } = this.state;
+
+    await ApiConfig.loginUser(username, password);
 };
 
 render() {
