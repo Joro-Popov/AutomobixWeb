@@ -15,6 +15,13 @@ const ApiConfig = (function() {
         }
     }
 
+    function logoutSuccess(token) {
+        return {
+          type: 'LOGOUT',
+          token
+        }
+    }
+
     async function loginUser(username, password) {
         const endpoint = `${baseUrl}user/${appKey}/login`;
         const data = { username, password };
@@ -33,10 +40,7 @@ const ApiConfig = (function() {
 
         sessionStorage.setItem('authToken', userInfo._kmd.authtoken);
         sessionStorage.setItem('userId', userInfo._id);
-
-        const token = sessionStorage.getItem('authToken');
-
-        store.dispatch(loginSuccess(token));
+        store.dispatch(loginSuccess( userInfo._kmd.authtoken));
     }
 
     async function registerUser(username, password) {
@@ -58,6 +62,8 @@ const ApiConfig = (function() {
 
         sessionStorage.setItem('authToken', userInfo._kmd.authtoken);
         sessionStorage.setItem('userId', userInfo._id);
+
+        store.dispatch(loginSuccess( userInfo._kmd.authtoken));
     }
 
     async function logoutUser() {
@@ -66,13 +72,12 @@ const ApiConfig = (function() {
             method: 'POST',
             url: endpoint,
             headers: { 
-                'Authorization': `Basic ${btoa(appKey + ':' + appSecret)}`,
-                'Content-Type': 'application/json',
-                Accept: 'application/json'
+                'Authorization':`Kinvey ${sessionStorage.getItem('authToken')}`,
             },
         }
         await fetch(endpoint, config);
         sessionStorage.clear();
+        store.dispatch(logoutSuccess());
     }
     return {
         loginUser,

@@ -1,14 +1,17 @@
-const state = {
-  token: undefined,
-};
-
-export default (state = {}, action) => {
+export default (state = {
+  isAuthenticated: false
+}, action) => {
     switch (action.type) {
       case 'LOGIN': {
-        console.log(action);
         return {
           ...state,
-          token: action.token,
+          isAuthenticated: action.token !== undefined,
+        }
+      }
+      case 'LOGOUT': {
+        return {
+          ...state,
+          isAuthenticated: false,
         }
       }
       default:
