@@ -67,6 +67,7 @@ header::after {
   font-size: 14px;
   margin-right: 25px;
   text-transform: uppercase;
+  color: white
 }
 
 .contact a:hover,

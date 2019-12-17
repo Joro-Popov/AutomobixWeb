@@ -21,6 +21,8 @@ register = async event => {
     event.preventDefault();
     const { username, password } = this.state;
     await ApiConfig.registerUser(username, password);
+
+    this.props.redirectAfterAuthentication();
 };
 
 render() {

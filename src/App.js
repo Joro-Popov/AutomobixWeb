@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch, Link, NavLink } from 'react-router-dom'
 
 import Navigation from './component/navigation';
 import Footer from './component/footer';
@@ -15,10 +14,10 @@ export default class App extends Component {
       <Router>
         <div className="App">
           <Navigation />
-          <Route exact path='/' component={Home} />
-          <Route path='/about' component={About} />
-          <Route path='/contact' component={Contact} />
-          <Route path='/authentication' component={Authentication} />
+            <Route exact path='/' component={Home} />
+            <Route path='/about' component={About} />
+            <Route path='/contact' component={Contact} />
+            <Route path='/authentication' component={Authentication} />
           <Footer />
         </div>
       </Router>

@@ -21,6 +21,7 @@ login = async event => {
     const { username, password } = this.state;
 
     await ApiConfig.loginUser(username, password);
+    this.props.redirectAfterAuthentication();
 };
 
 render() {

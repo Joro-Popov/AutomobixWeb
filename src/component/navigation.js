@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import ApiConfig from '../../src/services/ApiConfig';
+import { Link, NavLink } from 'react-router-dom'
 
 class Navigation extends Component {
     state = {
@@ -31,13 +32,11 @@ class Navigation extends Component {
                         <a href="mailto:info@yourmail.com"><i class="fa fa-envelope"aria-hidden="true"></i>info@yourmail.com</a>
                     </div>
                     <nav class="d-flex aic">
-                        {!isAuthenticated ? <a href="/authentication" class="login"><i class="fa fa-user" aria-hidden="true"></i>Login/Register</a>
-                        : <button class="login" onClick={this.logout}><i class="fa fa-user" aria-hidden="true"></i>Logout</button>}
-                        <ul class="nav social d-none d-md-flex">
-                            <li><a href="https://www.facebook.com/fh5co" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        </ul>
+                        {!isAuthenticated ?
+                        <NavLink class="login" to="/authentication">Login / Register</NavLink>
+                        : 
+                        <button class="login" onClick={this.logout}><i class="fa fa-user" aria-hidden="true"></i>Logout</button>
+                        }
                     </nav>
                 </div>
                 <nav class="navbar navbar-expand-md navbar-light">
@@ -52,11 +51,11 @@ class Navigation extends Component {
                     </div>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                         <ul class="navbar-nav">
-                            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/services">Services</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/contact">Contact Us</a></li>
+                            <NavLink class="nav-item" to="/">Home</NavLink>
+                            <NavLink class="nav-item" to="/about">About Us</NavLink>
+                            <NavLink class="nav-item" to="/services">Services</NavLink>
+                            <NavLink class="nav-item" to="/shop">Shop</NavLink>
+                            <NavLink class="nav-item" to="/contact">Contact Us</NavLink>
                         </ul>
                     </div>
                 </nav>
