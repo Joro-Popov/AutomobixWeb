@@ -24,7 +24,7 @@ class Navigation extends Component {
         const { isAuthenticated } = this.state;
         
         return(
-            <header class="position-absolute w-100">
+            <header class="w-100 navigation-content">
             <div class="container">
                 <div class="top-header d-none d-sm-flex justify-content-between align-items-center">
                     <div class="contact">
@@ -50,11 +50,11 @@ class Navigation extends Component {
                         <a class="login-icon d-sm-none" href="#"><i class="fa fa-user"></i></a>
                     </div>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                        <ul class="navbar-nav">
+                        <ul class="navbar-nav navigation">
                             <NavLink class="nav-item" to="/">Home</NavLink>
+                            {isAuthenticated && <NavLink class="na-item" to="/contact">My Repairs</NavLink>}
                             <NavLink class="nav-item" to="/about">About Us</NavLink>
                             <NavLink class="nav-item" to="/services">Services</NavLink>
-                            <NavLink class="nav-item" to="/shop">Shop</NavLink>
                             <NavLink class="nav-item" to="/contact">Contact Us</NavLink>
                         </ul>
                     </div>

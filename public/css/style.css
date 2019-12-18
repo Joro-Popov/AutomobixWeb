@@ -49,6 +49,89 @@ header::after {
   text-transform: uppercase;
 }
 
+.navigation {
+  width: 55%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation-content {
+  width: 100% !important;
+  background-color: rgb(95, 95, 100);
+}
+
+.box-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.button {
+  background-color: #ee1515;
+    border: none;
+    color: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.box-item-content {
+  font-family: inherit;
+}
+
+.service-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-font {
+  font-size: larger;
+  font-family: inherit;
+}
+
+.hr-container {
+  padding-left: 2%;
+  padding-right: 2%;
+
+}
+
+.box-item-service {
+  font-size: x-large;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3%;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3%;
+}
+
+.second-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3%;
+}
+
 .contact {
   font-size: 12px;
 }
