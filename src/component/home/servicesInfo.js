@@ -13,27 +13,14 @@ const serviceInfo = () => {
             </div>
             <div className="box-item">
                 <p className="box-item-content box-item-service">Engine service</p>
-                <NavLink className="button" to="/repairs/details/{id}">Details</NavLink>
+                <NavLink className="button" to="/repairs/1">Details</NavLink>
             </div>
             <div className="box-item">
-                <p className="box-item-content box-item-service">Engine service</p>
-                <NavLink className="button" to="/repairs/details">Details</NavLink>
-            </div>
-            <div className="box-item">
-                <p className="box-item-content box-item-service">Engine service</p>
-                <NavLink className="button" to="/repairs/details">Details</NavLink>
-            </div>
-            <div className="box-item">
-                <p className="box-item-content box-item-service">Engine service</p>
-                <NavLink className="button" to="/repairs/details">Details</NavLink>
-            </div>
-            <div className="box-item">
-                <p className="box-item-content box-item-service">Engine service</p>
-                <NavLink className="button" to="/repairs/details">Details</NavLink>
-            </div>
-            <div className="box-item">
-                <p className="box-item-content box-item-service">Engine service</p>
-                <NavLink className="button" to="/repairs/details">Details</NavLink>
+                <p className="box-item-content box-item-service">Clutch change</p>
+                <NavLink className="button" to="/repairs/2">Details</NavLink>
+            </div><div className="box-item">
+                <p className="box-item-content box-item-service">Transmission oil change</p>
+                <NavLink className="button" to="/repairs/3">Details</NavLink>
             </div>
         </div>
     </div>

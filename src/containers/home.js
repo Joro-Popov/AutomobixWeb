@@ -20,7 +20,6 @@ class Home extends Component {
                <div>
                     <MainCarInfo />
                     <ServicesInfo />
-                    <AdditionalInfo />
                </div>
             }
         </div>

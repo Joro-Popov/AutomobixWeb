@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import ApiConfig from '../../src/services/ApiConfig';
+import ApiConfig from '../../services/ApiConfig';
 import { Link, NavLink } from 'react-router-dom';
 
 class Navigation extends Component {

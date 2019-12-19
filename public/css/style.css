@@ -96,6 +96,18 @@ header::after {
   align-items: center;
 }
 
+.date-status {
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  display: flex;
+}
+
+.date-status-container {
+  display: flex;
+  justify-content: center;
+}
+
 .details-part {
   display: flex;
   justify-content: center;
