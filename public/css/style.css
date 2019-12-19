@@ -96,6 +96,21 @@ header::after {
   align-items: center;
 }
 
+.details-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(238, 21, 21);
+}
+
+.details-unit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
 .service-font {
   font-size: larger;
   font-family: inherit;
